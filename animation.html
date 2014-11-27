@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        img {
+            top: 600px;
+            left: 600px;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /* Chrome, Safari, Opera */
+            -webkit-animation-name: primeirona;
+            -webkit-animation-duration: 7s;
+            -webkit-animation-timing-function: linear;
+            //-webkit-animation-delay: 2s;
+            //-webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+            /* Standard syntax */
+            animation-name: primeirona;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            //animation-delay: 2s;
+            //animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        @-webkit-keyframes primeirona {
+           0%  {top:0px;}
+           10% {top:600px;}
+           20% {top:100px;}
+           30% {top:600px;}
+           40% {top:200px;}
+           50% {top:600px;}
+           60% {top:300px;}
+           70% {top:600px;}
+           80% {top:400px;}
+           90% {top:500px;}
+           100% {top:600px;}
+        }
+
+        @keyframes primeirona {
+           0%  {top:0px;}
+           10% {top:600px;}
+           20% {top:100px;}
+           30% {top:600px;}
+           40% {top:200px;}
+           50% {top:600px;}
+           60% {top:300px;}
+           70% {top:600px;}
+           80% {top:400px;}
+           90% {top:500px;}
+           100% {top:600px;}
+        }
+        div{
+            background-image: url("img/piso.png");
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            top: 680;
+            left: 540;
+        }
+    </style>
+    <body>
+        <img src="img/bola.png">
+        <div></div>
+    </body>
+</html>
